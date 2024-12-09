@@ -40,5 +40,5 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = "ru.securitytrip.App"
+    mainClass = "org.example.App"
 }
