@@ -13,23 +13,24 @@ public class ThreeDModel extends JPanel {
     private static final int HEIGHT = 600;
     private double[][] vertices;
     private int[][] edges;
-    private double scale = 1.0;
+    private double scale = 0.2;
     private double rotateX = 0;
     private double rotateY = 0;
     private double rotateZ = 0;
     private double translateX = 0;
     private double translateY = 0;
     private double translateZ = 0;
+    public double R = 3.0;
 
     public ThreeDModel() {
         calculateModel();
         setupKeyControls();
     }
 
-    private void calculateModel() {
+    public void calculateModel() {
         int stepsAlpha = 30;
         int stepsBeta = 30;
-        double R = 1.0;
+        
 
         List<double[]> points = new ArrayList<>();
         List<int[]> connections = new ArrayList<>();
